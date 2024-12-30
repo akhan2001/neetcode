@@ -1,0 +1,4 @@
+Learned how to do it efficiently
+Though the code is not optimal, it works.
+
+Dec 29 - 31
