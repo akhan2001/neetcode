@@ -1,0 +1,5 @@
+- Set key as a "list of frequency counts"
+- Check if its found in the hashmap
+- Add to the arraylist
+
+Dec 26 - 28
