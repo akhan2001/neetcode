@@ -1,1 +1,5 @@
 - First attempt: time limit exceeded. How to go about making the runtime lower
+- Second attempt: seperated each array into two arrays, one for the product of the numbers before the current index and one for the product of the numbers after the current index.
+- Then multilplied the two arrays together to get the final answer
+
+Dec 31
