@@ -1,44 +1,38 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         int n = 9;
-        int[] row = new int[n];
-        int[] col = new int[n];
-        int[] sub = new int[n];
+        // int[] row = new int[n];
+        // int[] col = new int[n];
+        // int[] sub = new int[n];
         Map<Integer, Set<Character>> rowMap = new HashMap<>();
         Map<Integer, Set<Character>> colMap = new HashMap<>();
         Map<Integer, Set<Character>> gridMap = new HashMap<>();
-        Set<Character> rowHash = new HashSet<>();
-        // Set<Character> colHash = new HashSet<>();
 
         for (int i = 0; i < n; i++) {
-            int k = 0;
             for (int j = 0; j < n; j++) {
                 if (board[i][j] == '.') continue;
-                // row[i] = board[i][j];
-                
-                if (rowHash.contains(board[i][j])) {
+
+                rowMap.putIfAbsent(i, new HashSet<>());
+                if (rowMap.get(i).contains(board[i][j])) {
                     return false;
                 }
-                rowHash.add(board[i][j]);
+                rowMap.get(i).add(board[i][j]);
 
-                if (rowMap.containsKey(board[i][j])) {
+                colMap.putIfAbsent(j, new HashSet<>());
+                if (colMap.get(j).contains(board[i][j])) {
                     return false;
                 }
-                rowMap.put(i, rowMap.getOrDefault(i, new HashSet<>()).add(board[i][j]));
-                System.out.println(board[i][j] + " : " + i);
+                colMap.get(j).add(board[i][j]);
 
                 
-                // col[j] = board[i][j];
-                // k = (i / 3) * 3 + (j / 3);
-                // sub[k] = board[i][j];
-                // System.out.println(board[i][j] + " : " + k);
             }
-            // System.out.println();
         }
 
-        // for (int i = 0; i < n; i++) {
-        //     System.out.println(row[i] + " : " + col[i] + " : " + sub[i]);
+        // for (Character c : rowHash) {
+        //     System.out.println(rowMap);
         // }
+        
+        System.out.println(rowMap + "\n" + colMap);
 
         return true;
     }
