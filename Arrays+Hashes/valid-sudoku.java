@@ -24,7 +24,12 @@ class Solution {
                 }
                 colMap.get(j).add(board[i][j]);
 
-                
+                int k = (i / 3) * 3 + (j / 3);
+                gridMap.putIfAbsent(k, new HashSet<>());
+                if (gridMap.get(k).contains(board[i][j])) {
+                    return false;
+                }
+                gridMap.get(k).add(board[i][j]);
             }
         }
 
@@ -32,7 +37,9 @@ class Solution {
         //     System.out.println(rowMap);
         // }
         
-        System.out.println(rowMap + "\n" + colMap);
+        System.out.println(rowMap + "\n");
+        System.out.println(colMap + "\n");
+        System.out.println(gridMap + "\n");
 
         return true;
     }
