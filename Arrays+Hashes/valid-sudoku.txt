@@ -3,5 +3,6 @@
 - Need to get the subMap to work
 - Got the rowMap and colMap to work
 - Need to get the subMap to work
+- Subgrid formula works
 
 Jan 1, 2025
