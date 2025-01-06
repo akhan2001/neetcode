@@ -1,0 +1,9 @@
+- Converted to lowercase and removed non-alphanumeric characters
+- Two pointers, one at the start and one at the end
+- If the characters at the two pointers are not the same, return false
+- If the characters are the same, move the pointers inward
+- Test cases:
+    - s="0P" -> false
+    - s="a" -> true
+
+Jan 6, 2025
