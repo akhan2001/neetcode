@@ -1,0 +1,6 @@
+- Used Hashset to store the numbers
+- Iterate through the array and check if the number is in the hashset
+- If the number is in the hashset, check if the number - 1 is in the hashset
+- If the number - 1 is in the hashset, then there is asequence
+
+Jan 4, 2025
