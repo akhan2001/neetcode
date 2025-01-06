@@ -1,4 +1,0 @@
-Anagram does not care about the order of the chars. I can sort them and check if the strings are equal.
-
-1. I first created two HashTables, set the values with their frequency amount accordingly. Fixed bugs.
-2. Best optimal way is to sort the two arrays into char arrays and then check if they're equal from there.

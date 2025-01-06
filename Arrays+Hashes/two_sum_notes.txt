@@ -1,4 +1,0 @@
-- brute force solution works, is not optimized for best runtime
-- used hashmap to see if it contains the difference in the array
-
-rearrange the equation: target = number + num --> target - num = difference (num2)
