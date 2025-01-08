@@ -1,5 +1,5 @@
 - two pointers algorithm
-- check if [i] + [j] = target
+- [i] = 0, [j] = nums.length - 1
 - if [i] + [j] > target, decrement j
 - if [i] + [j] < target, increment i
 - if [i] + [j] = target, return [i + 1, j + 1]
