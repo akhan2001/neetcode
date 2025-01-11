@@ -1,0 +1,9 @@
+- sort the array
+- set the target as 0 - nums[i]
+- set two pointers, j and k
+- if nums[j] + nums[k] == target, add to result
+- if nums[j] + nums[k] > target, decrement k
+- if nums[j] + nums[k] < target, increment j
+- the rest is to avoid duplicates and is two sum
+
+Jan 10, 2025

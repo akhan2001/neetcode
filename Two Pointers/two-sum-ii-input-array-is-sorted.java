@@ -1,35 +1,42 @@
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        int[] returnNums = new int[2];
-        // HashMap<Integer, Integer> returnInt = new HashMap<>();
+    public List<List<Integer>> threeSum(int[] nums) {
+        if (nums.length < 3) {
+            return new ArrayList<>();
+        }
 
-        // for (int i = 0; i < nums.length; i++) {
-        //     int diff = target - nums[i];
-        //     if (returnInt.containsKey(diff)) {
-        //         // System.out.println("i = " + i + " | " + returnInt.get(diff));
-        //         returnNums[0] = returnInt.get(diff) + 1;
-        //         returnNums[1] = i + 1;
-        //         break;
-        //     } else {
-        //         returnInt.put(nums[i], i);
-        //     }
-        // }
+        Arrays.sort(nums);
 
-        int i = 0;
-        int j = nums.length - 1;
-        while (i < j) {
-            // System.out.println(nums[i] + " : " + nums[j]);
-            if (nums[i] + nums[j] < target) {
-                i++;
-            } else if (nums[i] + nums[j] > target) {
-                j--;
-            } else {
-                returnNums[0] = i + 1;
-                returnNums[1] = j + 1;
-                break;
+        List<List<Integer>> sumList = new ArrayList<>();
+        for (int i = 0; i < nums.length - 2; i++) {
+            int target = 0 - nums[i];
+            int j = i + 1;
+            int k = nums.length - 1;
+            System.out.println("target: " + target);
+
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+            while (j < k) {
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    j++;
+                    continue;
+                } else if (k < nums.length - 1 && nums[k] == nums[k + 1]) {
+                    k--;
+                    continue;
+                }
+
+                if (nums[j] + nums[k] < target) {
+                    j++;
+                } else if (nums[j] + nums[k] > target) {
+                    k--;
+                } else {
+                    sumList.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                    j++;
+                    k--;
+                }
             }
         }
-        
-        return returnNums;
+
+        return sumList;
     }
 }
