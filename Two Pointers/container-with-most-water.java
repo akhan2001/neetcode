@@ -1,3 +1,10 @@
+class Solution {
+    public int maxArea(int[] height) {
+        int maxAmount = 0;
+
+        // for (int h : height) {
+        //     System.out.println(h);
+        // }
 
         int i = 0;
         int j = height.length - 1;
@@ -17,3 +24,7 @@
                 maxAmount = amount;
             }
         }
+
+        return maxAmount;
+    }
+}
