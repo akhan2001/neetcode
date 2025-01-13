@@ -11,9 +11,17 @@ class Solution {
             int target = 0 - nums[i];
             int j = i + 1;
             int k = nums.length - 1;
-            System.out.println("target: " + target);
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
             while (j < k) {
-                System.out.println("nums[j]: " + nums[j] + " | nums[k]: " + nums[k]);
+                if (j > i + 1 && nums[j] == nums[j - 1]) {
+                    j++;
+                    continue;
+                } else if (k < nums.length - 1 && nums[k] == nums[k + 1]) {
+                    k--;
+                    continue;
+                }
                 if (nums[j] + nums[k] == target) {
                     sumList.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
@@ -26,6 +34,6 @@ class Solution {
             }
         }
 
-        return new ArrayList<>();
+        return sumList;
     }
 }
