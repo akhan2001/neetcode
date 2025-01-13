@@ -1,0 +1,9 @@
+- printed out all the values
+- through while loop print out all the possible heights
+- simple algorithm was finding the amount when going increment to lower values
+- whichever height is lower, you only increment that
+- if both heights are same, increment both
+- only change the maxAmount value if it is greater
+- Struggles: not much, pretty straightforward with two pointers
+
+Jan 13, 2025
