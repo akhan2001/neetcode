@@ -1,0 +1,6 @@
+- check if the string has either () {} or []
+- if it does, remove the first instance of the parentheses
+- if the string is empty, return true
+- if the string is not empty, return false
+
+Jan 17, 2025
