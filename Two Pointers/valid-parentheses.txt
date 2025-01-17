@@ -3,4 +3,6 @@
 - if the string is empty, return true
 - if the string is not empty, return false
 
+- this solution is not optimal, but it works
+
 Jan 17, 2025
