@@ -1,0 +1,6 @@
+- pretty simple problem
+- use two pointers to swap the elements
+- have a temp variable to swap the elements
+- increment the left pointer and decrement the right pointer
+
+Jan 22, 2025
