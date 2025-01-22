@@ -1,4 +1,6 @@
 - bruteforce solution completed
 - need to do a better solution
 - hashset solution completed
-- 
+- python solution completed
+
+Jan 22, 2025
