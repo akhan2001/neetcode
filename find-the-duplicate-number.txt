@@ -1,0 +1,4 @@
+- bruteforce solution completed
+- need to do a better solution
+- hashset solution completed
+- 
