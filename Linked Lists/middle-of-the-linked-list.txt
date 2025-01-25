@@ -1,0 +1,7 @@
+- we need a slow and fast pointer
+- iterate through the linked list with the fast pointer
+- fast pointer moves twice as fast as the slow pointer
+- when the fast pointer reaches the end of the list, the slow pointer will be at the middle
+- return the slow pointer (print outs the middle node and rest of the list)
+
+Jan 25, 2025
