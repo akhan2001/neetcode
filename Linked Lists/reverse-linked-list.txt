@@ -1,0 +1,10 @@
+- set prev as None
+- set current as head
+- while current is not None:
+    - set temp as current.next
+    - set current.next as prev
+    - set prev as current
+    - set current as temp
+- return prev
+
+Jan 25, 2025
