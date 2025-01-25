@@ -1,0 +1,14 @@
+- call mergeSort function with array, left, right
+- in mergeSort function, if left >= right, return
+- call mergeSort function with array, left, mid
+- call mergeSort function with array, mid + 1, right
+- call merge function with array, left, mid, right
+- in merge function, create temp array with size right - left + 1
+- create i, j variables with left, mid + 1 values
+- while i <= mid and j <= right, if nums[i] < nums[j], append nums[i] to temp and increment i, else append nums[j] to temp and increment j
+- while i <= mid, append nums[i] to temp and increment i
+- while j <= right, append nums[j] to temp and increment j
+- copy temp array to nums array from left to right
+- return nums array
+
+Jan 25, 2025
