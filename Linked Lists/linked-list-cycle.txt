@@ -1,0 +1,5 @@
+- while loop to traverse the linked list
+- if the current node is in the set, return true
+- if the current node is not in the set, add it to the set
+
+Jan 26, 2025
