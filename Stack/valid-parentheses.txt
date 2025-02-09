@@ -1,0 +1,4 @@
+- find {} () [] in the string via while loop
+- replace with ""
+- if empty string return true
+- else return false
