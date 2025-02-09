@@ -4,8 +4,17 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        while "()" in s or "[]" in s or "{}" in s:
-            s = s.replace("()", "")
-            s = s.replace("[]", "")
-            s = s.replace("{}", "")
-        return s == ""
+        # while "()" in s or "[]" in s or "{}" in s:
+        #     s = s.replace("()", "")
+        #     s = s.replace("[]", "")
+        #     s = s.replace("{}", "")
+        # return s == ""
+
+        # stack approach
+        stack = []
+        for char in s:
+            if char in ["(", "[", "{"]:
+                stack.append(char)
+            elif char in [")", "]", "}"]:
+                if not stack:
+                    return False
