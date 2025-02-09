@@ -3,4 +3,10 @@
 - if empty string return true
 - else return false
 
+- stack approach
+- if char is [ { ( push to stack
+- if char is ] } ) pop from stack and check if it is the correct pair
+- if stack is empty return true
+- else return false
+
 Feb 9, 2025
